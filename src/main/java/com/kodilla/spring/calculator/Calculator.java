@@ -10,27 +10,27 @@ public class Calculator {
     private Display display;
 
     public double add(double a, double b){
-        double sum = a + b;
-        display.displayValue(sum);
-        return sum;
+        double val = a + b;
+        display.displayValue(val);
+        return val;
     }
 
     public double sub(double a, double b){
-        double dif = a - b;
-        display.displayValue(dif);
-        return dif;
+        double val = a - b;
+        display.displayValue(val);
+        return val;
     }
 
     public double mul(double a, double b){
-        double pro = a * b;
-        display.displayValue(pro);
-        return pro;
+        double val = a * b;
+        display.displayValue(val);
+        return val;
     }
 
     public double div(double a, double b){
-        double quo = a / b;
-        display.displayValue(quo);
-        return quo;
+        double val = a / b;
+        display.displayValue(val);
+        return val;
     }
 
 
