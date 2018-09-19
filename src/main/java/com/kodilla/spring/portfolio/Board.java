@@ -20,7 +20,7 @@ public class Board {
     public TaskLis doneList;
 
     public TaskLis addTaskToDoList() {
-        toDoList.add("Sopping.");
+        toDoList.add("Shopping.");
         return toDoList;
     }
 

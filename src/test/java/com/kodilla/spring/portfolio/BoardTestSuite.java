@@ -1,5 +1,6 @@
 package com.kodilla.spring.portfolio;
 
+import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
@@ -25,6 +26,10 @@ public class BoardTestSuite {
         String taskOneResult = task1.readTaskFromTaskList();
         String taskTwoResult = task2.readTaskFromTaskList();
         String taskThreeResult = task3.readTaskFromTaskList();
+
+        Assert.assertEquals("Shopping.",taskOneResult);
+        Assert.assertEquals("Read a book.",taskTwoResult);
+        Assert.assertEquals("Watch a movie.",taskThreeResult);
 
         System.out.println(taskOneResult);
         System.out.println(taskTwoResult);
